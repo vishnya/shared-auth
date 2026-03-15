@@ -56,7 +56,9 @@ function checkPassword(pw) {
 
 const LOGIN_HTML = (error, redirect) => `<!DOCTYPE html><html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
-<title>Login</title><style>
+<title>Login</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231a1a2e'/%3E%3Cpath d='M16 7 a9 9 0 1 1 0 18 a9 9 0 1 1 0-18z' fill='none' stroke='%234a6fa5' stroke-width='2'/%3E%3Cpath d='M16 13 v4 h3' fill='none' stroke='%23a0b4d0' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:#1a1a2e;color:#e0e0e0;
 min-height:100vh;display:flex;align-items:center;justify-content:center}
