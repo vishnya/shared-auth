@@ -8,8 +8,8 @@ const PORT = process.env.PORT || 8099;
 const PASSWORD = process.env.AUTH_PASSWORD || null;
 const COOKIE_NAME = 'vps_session';
 const COOKIE_DOMAIN = '.5.161.182.15.nip.io';
-const MAX_AGE_MS = 30 * 24 * 3600 * 1000;
-const MAX_AGE_S = 30 * 24 * 3600;
+const MAX_AGE_MS = 90 * 24 * 3600 * 1000;
+const MAX_AGE_S = 90 * 24 * 3600;
 const SESSIONS_FILE = path.join(__dirname, '.auth-sessions.json');
 
 // Session store
@@ -126,6 +126,6 @@ app.get('/auth/logout', (req, res) => {
 });
 
 if (!PASSWORD) console.log('WARNING: No AUTH_PASSWORD set, all requests will pass auth');
-app.listen(PORT, '127.0.0.1', () => console.log(`Shared auth on :${PORT}`));
+if (require.main === module) app.listen(PORT, '127.0.0.1', () => console.log(`Shared auth on :${PORT}`));
 
 module.exports = { app, parseCookies, isValid, COOKIE_NAME };

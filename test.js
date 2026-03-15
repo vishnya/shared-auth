@@ -87,12 +87,12 @@ async function login() {
       assert(c.includes('Domain=.5.161.182.15.nip.io'), 'Cookie on parent domain');
     });
 
-    await asyncTest('cookie has 30-day Max-Age', async () => {
+    await asyncTest('cookie has 90-day Max-Age', async () => {
       const res = await login();
       const m = res.cookies[0].match(/Max-Age=(\d+)/);
       assert(m, 'Max-Age present');
       const age = parseInt(m[1]);
-      assert(age >= 29 * 86400 && age <= 31 * 86400, `Should be ~30 days, got ${age}s`);
+      assert(age >= 89 * 86400 && age <= 91 * 86400, `Should be ~30 days, got ${age}s`);
     });
 
     await asyncTest('login with redirect param redirects to target', async () => {
