@@ -57,7 +57,7 @@ function checkPassword(pw) {
 const LOGIN_HTML = (error, redirect) => `<!DOCTYPE html><html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
 <title>Login</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231a1a2e'/%3E%3Cpath d='M16 7 a9 9 0 1 1 0 18 a9 9 0 1 1 0-18z' fill='none' stroke='%234a6fa5' stroke-width='2'/%3E%3Cpath d='M16 13 v4 h3' fill='none' stroke='%23a0b4d0' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231a1a2e'/%3E%3Cpath d='M10 14v-3c0-3.3 2.7-6 6-6s6 2.7 6 6v3' fill='none' stroke='%234a6fa5' stroke-width='2' stroke-linecap='round'/%3E%3Crect x='8' y='14' width='16' height='12' rx='2' fill='%234a6fa5'/%3E%3Ccircle cx='16' cy='20' r='2' fill='%23e0e0e0'/%3E%3Cpath d='M16 22v2' stroke='%23e0e0e0' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:#1a1a2e;color:#e0e0e0;
